@@ -2,6 +2,11 @@ name: Update activity constellation
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "assets/**"
   schedule:
     - cron: "17 1 * * *"
 
